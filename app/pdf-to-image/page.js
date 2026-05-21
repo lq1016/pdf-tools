@@ -32,9 +32,9 @@ export default function PdfToImagePage() {
 
   const getPdfJs = async () => {
     const mod = await import('pdfjs-dist');
-    // Set worker from CDN in browser
+    // 使用本地 worker 文件，不依赖 CDN
     if (typeof window !== 'undefined') {
-      mod.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${mod.version}/pdf.worker.min.mjs`;
+      mod.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.mjs';
     }
     return mod;
   };
