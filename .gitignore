@@ -1,0 +1,23 @@
+# dependencies
+node_modules
+
+# next.js build
+.next
+
+# production build
+out
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+
+# env
+.env
+.env.local
+.env.production.local
+
+# IDE / Claude
+.claude/
