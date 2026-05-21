@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverActions: {
-      bodySizeLimit: '50mb',
-    },
+  basePath: '/tools/pdf-tools',
+  output: 'export',
+  images: {
+    unoptimized: true,
   },
 };
 
